@@ -70,11 +70,6 @@ header {
   justify-content: space-between;
 }
 
-#filters {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 #clear {
   display: flex;
   color: var(--primary-dark-cyan);
@@ -97,6 +92,11 @@ header {
 
 #filterbar.hide {
   visibility: hidden;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -180,14 +180,10 @@ header {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 0.5rem;
-  column-gap: 0.5rem;
+  align-items: center;
 }
 
 /* Utilities */
-.filter-btn {
-}
-
 .filter {
   display: flex;
   justify-content: center;
@@ -274,4 +270,39 @@ header {
   background-color: blue;
 }
 
-@media only screen and (min-width: 768px);
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url('../images/bg-header-desktop.svg');
+  }
+
+  .grid-item {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-template-rows: none;
+    column-gap: 0.5rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .card img {
+    position: static;
+    max-width: 50px;
+    height: auto;
+    width: 100%;
+    margin-right: 5rem;
+  }
+
+  .filters {
+    justify-content: flex-end;
+  }
+
+  hr {
+    display: none;
+  }
+}
