@@ -38,6 +38,7 @@ h6 {
 
 #content-wrap {
   padding-bottom: 2.5rem;
+  min-width: 300px;
 }
 
 footer {
@@ -46,14 +47,16 @@ footer {
   width: 100%;
   height: 2.5rem;
   text-align: center;
+  min-width: 300px;
 }
 
 /* Main content */
 header {
   height: 20vh;
   background-color: var(--primary-dark-cyan);
-  background-image: url('../images/bg-header-desktop.svg');
+  background-image: url('../images/bg-header-mobile.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #content {
@@ -69,6 +72,7 @@ header {
 
 #filters {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #clear {
@@ -269,3 +273,5 @@ header {
 .bg-blue {
   background-color: blue;
 }
+
+@media only screen and (min-width: 768px);
