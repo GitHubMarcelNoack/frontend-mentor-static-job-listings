@@ -18,10 +18,6 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Filter job listings based on the categories using the HTML `data-` attribute
 
-## Live-Demo
-
-The page is currently deployed on Netlify and can be found [here](https://lucid-mcclintock-ed316d.netlify.app/).
-
 ### Filtering
 
 #### Option 1
@@ -44,3 +40,7 @@ Use the [data.json](./data.json) file to pull the data and then dynamically add 
 To add a filter, the user needs to click on the tablets on the right-side of the listing on desktop or the bottom on mobile. For each filter added, only listings containing all selected filters should be returned.
 
 **Have fun building!** 🚀
+
+## Live-Demo
+
+The page is currently deployed on Netlify and can be found [here](https://lucid-mcclintock-ed316d.netlify.app/).
